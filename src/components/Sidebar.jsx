@@ -122,6 +122,7 @@ const Sidebar = () => {
           </NavLink>
         </nav>
       </div>
+      
       <p className="text-xs text-center font-bold text-gray-500 py-2">
         Designed by: <span className="text-secondary">ejtechpro</span>
       </p>

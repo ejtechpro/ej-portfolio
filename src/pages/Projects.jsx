@@ -55,27 +55,27 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="border border-border rounded-2xl overflow-hidden shadow-md hover:shadow-lg bg-primary transition-all"
+            className="border border-border rounded-md overflow-hidden shadow-sm  bg-primary transition-all"
           >
             {/* Clickable Screenshot */}
             <img
               src={project.image}
               alt={project.title}
-              className="w-full max-h-[500px] object-cover cursor-pointer"
+              className="w-full max-h-[500px] cursor-pointer"
               onClick={() => setLightboxImage(project.image)}
             />
 
             {/* Details */}
             <div className="p-6">
-              <h3 className="text-2xl font-semibold mb-3">{project.title}</h3>
-              <p className="text-[--color-text] mb-4">{project.description}</p>
+              <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
+              <p className="mb-4">{project.description}</p>
 
               {/* Tech Stack */}
               <div className="flex flex-wrap gap-2 mb-5">
                 {project.tech.map((tech, i) => (
                   <span
                     key={i}
-                    className="text-sm bg-secondary text-primary px-3 py-1 rounded-md"
+                    className="text-sm bg-gray-500 text-white px-4 py-1 rounded-full"
                   >
                     {tech}
                   </span>
@@ -88,7 +88,7 @@ const Projects = () => {
                   href={project.github}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center gap-2 text-[--color-icon] hover:text-primary"
+                  className="flex items-center gap-2 text-secondary hover:text-active"
                 >
                   <FaGithub /> Code
                 </a>
@@ -96,8 +96,8 @@ const Projects = () => {
                   href={project.demo}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center gap-2 text-[--color-icon] hover:text-primary"
-                >
+                  className="flex items-center gap-2 text-secondary hover:text-active"
+                > 
                   <FaExternalLinkAlt /> Demo
                 </a>
               </div>
@@ -109,11 +109,11 @@ const Projects = () => {
       {/* Lightbox Modal */}
       {/* Lightbox Modal */}
 {lightboxImage && (
-  <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
+  <div className="fixed inset-0 bg-black/80 flex items-center select-none justify-center z-50 p-4">
     {/* Close button always at top-right */}
     <button
       onClick={() => setLightboxImage(null)}
-      className="fixed top-6 right-6 text-white text-4xl hover:text-red-400 z-50"
+      className="fixed top-6 right-6 text-white bg-gray-500 text-xl p-1 rounded-full hover:text-red-400 z-50 cursor-pointer shadow-md border-2 border-primary"
     >
       <FaTimes />
     </button>

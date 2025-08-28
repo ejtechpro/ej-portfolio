@@ -27,7 +27,7 @@ const Layout = () => {
           ></div>
 
           {/* Drawer */}
-          <div className="fixed top-0 left-0 h-full w-64 bg-primary border-r border-border shadow-lg z-50 lg:hidden animate-slideIn">
+          <div className="fixed flex top-0 left-0 h-full bg-primary border-r border-border shadow-sm z-50 lg:hidden animate-slideIn">
             <Sidebar />
           </div>
         </>
@@ -40,7 +40,7 @@ const Layout = () => {
         </div>
         <div className="bg-bg">
           <section
-            className={`flex-1 mt-2 bg-primary shadow-md rounded-md mr-2 border border-border ${
+            className={`flex-1 mt-2 bg-primary shadow-sm rounded-md mr-2 border border-border ${
               isOpen ? `ml-0` : `ml-3`
             }`}
           >

@@ -14,12 +14,12 @@
 }
 
 :root {
-  --bg: #f1f1f1;
-  --primary: #ffffff;
-  --secondary: #646cff;
-  --active: darkblue;
-  --txt: #222;
-  --scroll-thumb: rgb(136, 136, 136);
+  --bg: #f1f1f1; 
+  --primary: #ffffff; 
+  --secondary: #646cff; 
+  --active: #4b52cc; 
+  --txt: #222222; 
+  --scroll-thumb: #888888; 
   --border: rgba(8, 8, 8, 0.192);
   --hr: rgba(158, 140, 140, 0.233);
   --hover: rgba(0, 0, 0, 0.1);
@@ -32,7 +32,7 @@
   --txt: rgb(230, 230, 250);
   --primary: #333;
   --secondary: #646cff;
-  --active: #9fa3f8;
+  --active: #4b52cc; 
   --scroll-thumb: rgb(136, 136, 136);
   --border: #6a7282;
   --hr: rgba(158, 140, 140, 0.384);
