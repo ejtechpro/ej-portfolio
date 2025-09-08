@@ -6,7 +6,7 @@ const projects = [
     title: "Portfolio Website",
     description:
       "A personal portfolio built with React, Tailwind CSS, and Vite to showcase my skills, services, and projects.",
-    image: "/project1.png",
+    image: "projects/dataAutomator.png",
     tech: ["React", "Tailwind", "Vite"],
     github: "https://github.com/username/portfolio",
     demo: "https://portfolio-demo.com",
@@ -15,7 +15,7 @@ const projects = [
     title: "E-Commerce App",
     description:
       "Full-stack e-commerce app with product listings, cart, and Stripe payment integration.",
-    image: "/projects/ecommerce.png",
+    image: "/projects/communityFund.png",
     tech: ["React", "Node.js", "MongoDB"],
     github: "https://github.com/username/ecommerce",
     demo: "https://ecommerce-demo.com",
