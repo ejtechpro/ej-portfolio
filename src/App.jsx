@@ -25,7 +25,7 @@ function App() {
 
   return (
     <Routes>
-      <Route element={<Layout />}>
+      <Route path="ej-portfolio" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="services" element={<Services />} />
