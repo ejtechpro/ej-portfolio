@@ -24,7 +24,7 @@ const projects = [
     title: "AI Plant Disease Detector",
     description:
       "A machine learning web app to detect plant diseases from images using TensorFlow & FastAPI.",
-    image: "/projects/plant-ai.png",
+    image: "/projects/#",
     tech: ["React", "FastAPI", "TensorFlow"],
     github: "https://github.com/username/plant-ai",
     demo: "https://plant-ai-demo.com",
@@ -33,7 +33,7 @@ const projects = [
     title: "Mobile Task Manager",
     description:
       "A mobile-first React Native app for managing tasks with offline storage.",
-    image: "/projects/mobile-task.png",
+    image: "/projects/#",
     tech: ["React Native", "Expo", "SQLite"],
     github: "https://github.com/username/mobile-task",
     demo: "https://mobile-task-demo.com",
