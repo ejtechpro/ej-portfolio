@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": ".",
+  "homepage": "https://ejtechpro.github.io/ej-portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
