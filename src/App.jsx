@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
@@ -10,6 +10,7 @@ import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import useTheme from "../../Alpha/client/src/store/useTheme";
 import { useLayoutEffect } from "react";
+import Test from "./pages/Test";
 
 function App() {
   const theme = useTheme((state) => state.theme);
@@ -25,8 +26,9 @@ function App() {
 
   return (
     <Routes>
-      <Route path="ej-portfolio" element={<Layout />}>
+      <Route element={<Layout />}>
         <Route index element={<Home />} />
+        <Route path="test" element={<Test />} />
         <Route path="about" element={<About />} />
         <Route path="services" element={<Services />} />
         <Route path="skills" element={<Skills />} />
